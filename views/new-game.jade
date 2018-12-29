@@ -1,0 +1,22 @@
+extends layout
+
+block append content  
+  form.form-newgame(role='form', action='', method='post')
+    h2.form-newgame-heading New Game
+    input.form-control(type='text', name='title', id='title', placeholder="Title")
+    input.form-control(type='textarea', name='desc', id='desc', placeholder='Description')
+    select(name="genre", id="genre", placeholder="Genre")
+      option(value="" disabled selected) Genre
+      each genre in genres
+        option(value="#{genre}", name="#{genre}") #{genre}
+    select(name="platform", id="platform")
+      option(value="" disabled selected) Platform
+      each platform in platforms
+        option(value="#{platform}", name="#{platform}") #{platform}
+    label
+      input.form-check-inline(type='radio', name='privacy', id='privacy', value="private")
+      | Private
+    label
+      input.form-check-inline(type='radio', name='privacy', id='privacy', value="public")
+      | Public
+    button.btn.btn-lg.btn-primary.btn-block(type='submit') Submit

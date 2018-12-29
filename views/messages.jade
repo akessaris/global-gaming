@@ -1,0 +1,13 @@
+extends layout
+
+block append content
+  script(src="/socket.io/socket.io.js")
+  script(src="/js/messaging.js") 
+  .container
+    if (subject)
+     h2 Subject: #{subject}
+    div#usersDiv
+    div#chatDiv
+
+    input.form-control(type='text', name='message', id='message', placeholder='Message', required)
+    button.btn.btn-md.btn-primary.btn-block(id="btn") Send

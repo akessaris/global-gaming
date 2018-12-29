@@ -1,0 +1,124 @@
+/* Main styling */
+body {
+  background-color: black;
+}
+
+p, h1, h2, h3, h4, h5, h6, li {
+  color: #6666FF;
+}
+
+/* Forms */
+
+/* Sign In */
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Filter */
+.form-filter {
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-filter input[type="text"] {
+  text-align: center;
+}
+
+.form-filter input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* New Game */
+.form-newgame {
+  text-align: center;
+}
+
+.form-newgame-heading {
+  text-align: left;
+}
+
+.form-newgame input[type="radio"] {
+  margin-right: 10px;
+}
+
+label {
+  color: white;
+  padding: 5px;
+}
+
+/* Company Heading */
+
+.ggLogo span {
+  color:#6666FF;
+  background-color: black;
+  padding: 5px;
+}
+
+h1.ggLogo {
+  text-align:center;
+}
+
+.ggSlogan span {
+  color:#6666FF;
+  margin: 5px;
+}
+
+h3.ggSlogan {
+  text-align:center;
+  margin-bottom: 20px;
+}
+
+/* Error display  */
+.error {
+  text-align: center;
+  color: red;
+}
+
+/* Tables */
+table {
+  background-color: grey;
+}
+
+table thead {
+  background-color: blue;
+  color: white;
+}
+
+table#chatTable {
+  background-color: #c1c1c1;
+}

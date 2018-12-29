@@ -1,0 +1,33 @@
+{
+  "name": "global_gaming",
+  "version": "1.0.0",
+  "description": "GG is a web app that will allow users to submit their amazing game ideas.  Users will register and login. Once logged in, they can submit, view, and update their game ideas. Users that aren't logged in can still see all public games submitted to the site.",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "^4.16.4",
+    "express-flash-messages": "^0.1.1",
+    "express-session": "^1.15.6",
+    "jade": "~1.11.0",
+    "jquery": "^3.3.1",
+    "mongoose": "^4.8.6",
+    "mongoose-url-slugs": "^1.0.2",
+    "morgan": "^1.9.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "passport-mongoose": "0.0.1",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "eslint-plugin-mocha": "^5.2.0"
+  }
+}

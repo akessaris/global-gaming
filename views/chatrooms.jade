@@ -1,0 +1,24 @@
+extends layout
+
+block append content
+  .container  
+    form.form-chat(role='form', action='/chatrooms', method='post')
+      h2.form-chat-heading New Chatroom
+      input.form-control(type='text', name='username', id='username', placeholder='Username', required)
+      input.form-control(type='text', name='subject', id='subject', placeholder='Subject', required)
+      button.btn.btn-lg.btn-primary.btn-block(type='submit') New Chat
+        
+    if (chatrooms && recipients)
+      table.table.table-striped#chatTable
+           thead
+             tr
+               th User
+               th Subject
+           tbody
+             each chatroom, index in chatrooms
+               tr
+                 td
+                   a(href="/chatrooms/#{chatroom._id}") #{recipients[index]} 
+                 td 
+                   a(href="/chatrooms/#{chatroom._id}") #{chatroom.subject}
+  
