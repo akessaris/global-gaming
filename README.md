@@ -1,4 +1,4 @@
-# Global Gaming
+# ![Global Gaming](http://linserv1.cims.nyu.edu:22959)
 
 ## Overview
 
